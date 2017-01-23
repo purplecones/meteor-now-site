@@ -239,9 +239,9 @@ p.paragraph {
 	.socialproof .col-3 {
 		width: 33.33%;
 	}
-  .hero {
+  /*.hero {
     width: 100%;
-  }
+  }*/
   /*.socialproof .heading {
     margin: 40px 0;
   }*/
@@ -285,7 +285,12 @@ p.paragraph {
 .footer .nav-link {
 	display: inline-block;
 	margin: 0 10px;
-}.ctas-button,
+}
+.footer a {
+  color: #000000;
+  text-decoration: none; /* no underline */
+}
+.ctas-button,
 .ctas-button-2 {
 	display: inline-block;
 	height: 40px;
@@ -353,21 +358,15 @@ pre {
 }
 
 .hero {
-  /*text-align: center;*/
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   max-width: 600px;
   margin: 0 auto;
 }
-.hero img {
-  width: 100%;
-}
-/* terminal */
-/*body {
-  background: #6D7074;
-}*/
 
+@media (max-width: 900px) {
+  .hero img {
+    width: 100%;
+  }
+}
 
 .terminal-window {
   text-align: left;
@@ -446,3 +445,6 @@ pre {
 .terminal-data { display: none; }
 .terminal-window .gray { color: gray; }
 .terminal-window .green { color: green;}
+.repo-link {
+  margin-top: 30px;
+}
